@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;   /* Imposta l'altezza di tutta la pagina */
+}
+
+/* Contenuto della pagina */
+.content {
+    min-height: 100%; /* La sezione di contenuto occupa almeno tutta la pagina */
+    padding-bottom: 60px; /* Distanza del footer dalla parte inferiore */
+}
+
+/* footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Spinge il footer in fondo */
+}
+
+body {
+    padding-top: 40px; /* margine superiore per evitare che il contenuto venga nascosto dalla navbar */
+}
+
+.giustificato {
+    text-align: justify;   /*testo giustificato*/
+}
+
+

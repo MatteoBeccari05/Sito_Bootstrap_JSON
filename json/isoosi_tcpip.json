@@ -1,0 +1,107 @@
+{
+  "title": "ISO/OSI vs TCP/IP",
+  "navbar": {
+    "brand": {
+      "href": "../pages/index.html",
+      "logo": "../images/logo.png",
+      "alt": "WBSCHOOL Logo",
+      "height": "40px"
+    },
+    "items": [
+      {
+        "text": "Home",
+        "href": "../pages/index.html"
+      },
+      {
+        "text": "Le socket",
+        "href": "../pages/socket.html"
+      },
+      {
+        "text": "Server / Client",
+        "href": "../pages/server_client.html"
+      },
+      {
+        "text": "La Pila ISO/OSI",
+        "href": "../pages/pila_iso_osi.html"
+      },
+      {
+        "text": "Stack TCP/IP",
+        "href": "../pages/stack_tcp_ip.html"
+      },
+      {
+        "text": "ISO/OSI vs TCP/IP",
+        "href": "../pages/isoosi_vs_tcpip.html",
+        "active": true
+      },
+      {
+        "text": "Glossario",
+        "href": "../pages/glossario.html"
+      }
+    ]
+  },
+  "content": {
+    "header": {
+      "title": "Differenze tra la Pila ISO/OSI e lo Stack TCP/IP",
+      "description": "La Pila ISO/OSI e lo Stack TCP/IP sono entrambi modelli di riferimento per la comunicazione di rete, ma presentano alcune differenze significative. La tabella seguente mette a confronto le principali differenze:"
+    },
+    "table": {
+      "headers": [
+        "Caratteristica",
+        "Pila ISO/OSI",
+        "Stack TCP/IP"
+      ],
+      "rows": [
+        [
+          "Numero di livelli",
+          "7",
+          "4"
+        ],
+        [
+          "Scopo",
+          "Teorico, per descrivere la comunicazione di rete",
+          "Pratico, utilizzato per Internet e reti moderne"
+        ],
+        [
+          "Definizione dei livelli",
+          "Più dettagliata, con livelli separati per la gestione di sessioni e presentazione",
+          "Più sintetica, combinando funzioni in meno livelli"
+        ],
+        [
+          "Livelli principali",
+          "Fisico, Data Link, Rete, Trasporto, Sessione, Presentazione, Applicazione",
+          "Link, Internet, Trasporto, Applicazione"
+        ],
+        [
+          "Protocolli utilizzati",
+          "Teorici, ma descrive protocolli comuni come IP, TCP, UDP, ecc.",
+          "Utilizza protocolli reali come IP, TCP, UDP, HTTP, ecc."
+        ],
+        [
+          "Applicazione",
+          "Didattico e di riferimento per la progettazione di sistemi di rete",
+          "Utilizzato effettivamente in Internet e nelle reti moderne"
+        ]
+      ]
+    },
+    "image": {
+      "src": "../images/tcp_osi.png",
+      "alt": "Confronto tra ISO/OSI e TCP/IP"
+    },
+    "paragraphs": [
+      {
+        "title": "Differenze principali",
+        "content": [
+          "<strong>Numero di livelli:</strong> La Pila ISO/OSI è composta da 7 livelli, mentre lo Stack TCP/IP si basa su 4 livelli. I livelli ISO/OSI sono più dettagliati e separano funzioni come la gestione delle sessioni e la presentazione dei dati, mentre il TCP/IP combina alcune di queste funzioni in livelli più generali.",
+          "<strong>Scopo:</strong> La Pila ISO/OSI è un modello teorico, utilizzato principalmente per descrivere e comprendere come funziona la comunicazione di rete. Invece, lo Stack TCP/IP è un modello pratico, utilizzato nella progettazione e nell'implementazione di Internet e delle reti moderne.",
+          "<strong>Definizione dei livelli:</strong> La Pila ISO/OSI fornisce una separazione più dettagliata delle funzioni di rete, con livelli separati per la gestione delle sessioni e della presentazione dei dati, mentre lo Stack TCP/IP ha una struttura più semplificata con meno livelli.",
+          "<strong>Protocolli utilizzati:</strong> La Pila ISO/OSI descrive protocolli comuni e teorizza su come essi possano interagire, mentre lo Stack TCP/IP utilizza protocolli reali come IP, TCP, UDP, HTTP, che sono effettivamente utilizzati in Internet."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text": "&copy; 2024 WBECKSCHOOL",
+    "logo": "../images/logo.png",
+    "author": "Matteo Beccari 5F"
+  }
+}

@@ -1,0 +1,242 @@
+{
+    "title": "Glossario",
+    "links": [
+        {
+            "href": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+            "rel": "stylesheet",
+            "integrity": "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH",
+            "crossorigin": "anonymous"
+        },
+        {
+            "href": "../style/style.css",
+            "rel": "stylesheet"
+        },
+        {
+            "href": "../images/logo.png",
+            "rel": "icon",
+            "type": "image/x-icon"
+        }
+    ],
+    "navbar": {
+        "brand": {
+            "href": "../pages/index.html",
+            "img": {
+                "src": "../images/logo.png",
+                "alt": "WBSCHOOL Logo",
+                "style": "height: 40px"
+            }
+        },
+        "links": [
+            {
+                "href": "../pages/index.html",
+                "text": "Home"
+            },
+            {
+                "href": "../pages/socket.html",
+                "text": "Le socket"
+            },
+            {
+                "href": "../pages/server_client.html",
+                "text": "Server / Client"
+            },
+            {
+                "href": "../pages/pila_iso_osi.html",
+                "text": "La Pila ISO/OSI"
+            },
+            {
+                "href": "../pages/stack_tcp_ip.html",
+                "text": "Stack TCP/IP"
+            },
+            {
+                "href": "../pages/isoosi_vs_tcpip.html",
+                "text": "ISO/OSI vs TCP/IP"
+            },
+            {
+                "href": "../pages/glossario.html",
+                "text": "Glossario",
+                "active": true
+            }
+        ]
+    },
+    "content": {
+        "title": "Glossario dei termini utilizzati nel sito",
+        "accordion": [
+            {
+                "title": "Stack TCP-IP",
+                "content": "Lo stack TCP/IP è un modello di riferimento utilizzato per descrivere il funzionamento della comunicazione in rete, come su Internet. È suddiviso in quattro livelli principali, ognuno con compiti specifici che cooperano per garantire il trasferimento dei dati tra dispositivi.",
+                "items": [
+                    {
+                        "title": "Livello Applicazione",
+                        "description": "Include protocolli come HTTP, FTP, e SMTP per permettere agli utenti di interagire con la rete."
+                    },
+                    {
+                        "title": "Livello Trasporto",
+                        "description": "Garantisce la trasmissione affidabile dei dati tramite TCP (affidabile) o UDP (più rapido ma meno sicuro)."
+                    },
+                    {
+                        "title": "Livello Internet",
+                        "description": "Gestisce l'instradamento dei pacchetti con il protocollo IP per identificare i dispositivi sulla rete."
+                    },
+                    {
+                        "title": "Livello Accesso Rete",
+                        "description": "Si occupa della trasmissione fisica dei dati tramite tecnologie come Ethernet o Wi-Fi."
+                    }
+                ]
+            },
+            {
+                "title": "Socket",
+                "content": "Un socket è un'interfaccia software che consente la comunicazione tra due applicazioni, sia sulla stessa macchina che su dispositivi diversi in una rete. I socket sono fondamentali per il funzionamento dei protocolli di rete come TCP e UDP, e rappresentano i punti finali di una connessione di rete.",
+                "items": [
+                    {
+                        "title": "Connessione TCP",
+                        "description": "Il socket crea una connessione affidabile tra client e server, garantendo che i dati siano ricevuti nell'ordine corretto."
+                    },
+                    {
+                        "title": "Connessione UDP",
+                        "description": "Il socket invia pacchetti senza stabilire una connessione, risultando più veloce ma meno sicuro."
+                    },
+                    {
+                        "title": "Interazione Client-Server",
+                        "description": "Viene utilizzato per la comunicazione tra client (es. browser web) e server (es. server web)."
+                    }
+                ]
+            },
+            {
+                "title": "Server",
+                "content": "Un server è un dispositivo o un programma che fornisce servizi o risorse a un altro dispositivo, chiamato client, attraverso una rete. I server sono progettati per gestire richieste provenienti da molti client e rispondere con i dati o le risorse richieste.",
+                "items": [
+                    {
+                        "title": "Server Web",
+                        "description": "Fornisce pagine web e altri contenuti ai browser web dei client tramite il protocollo HTTP."
+                    },
+                    {
+                        "title": "Server di Database",
+                        "description": "Gestisce e fornisce l'accesso a grandi volumi di dati tramite query SQL."
+                    },
+                    {
+                        "title": "File Server",
+                        "description": "Memorizza e gestisce file, consentendo ai client di scaricare, caricare o modificare i file tramite la rete."
+                    }
+                ]
+            },
+            {
+                "title": "Client",
+                "content": "Un client è un dispositivo o un programma che accede ai servizi o alle risorse fornite da un server tramite una rete. I client inviano richieste al server e ricevono risposte in base alle loro necessità.",
+                "items": [
+                    {
+                        "title": "Client Web",
+                        "description": "Un browser che richiede pagine web e risorse da un server web tramite HTTP."
+                    },
+                    {
+                        "title": "Client di Posta Elettronica",
+                        "description": "Un'applicazione che invia e riceve email tramite server di posta come SMTP o IMAP."
+                    },
+                    {
+                        "title": "Client FTP",
+                        "description": "Un programma che permette il trasferimento di file tra il client e un server FTP."
+                    }
+                ]
+            },
+            {
+                "title": "Pila ISO/OSI",
+                "content": "La Pila ISO/OSI (International Standards Organization/Open Systems Interconnection) è un modello di riferimento utilizzato per comprendere e descrivere come avviene la comunicazione tra dispositivi su una rete. È composta da sette livelli distinti, ognuno dei quali ha una funzione specifica nel processo di comunicazione.",
+                "items": [
+                    {
+                        "title": "Livello 1 - Fisico",
+                        "description": "Gestisce la trasmissione di segnali fisici sulla rete, come cavi e segnali elettrici."
+                    },
+                    {
+                        "title": "Livello 2 - Collegamento Dati",
+                        "description": "Si occupa della trasmissione sicura dei dati tra dispositivi direttamente connessi, utilizzando tecniche come l'indirizzamento MAC."
+                    },
+                    {
+                        "title": "Livello 3 - Rete",
+                        "description": "Gestisce l'instradamento dei dati attraverso diverse reti, utilizzando indirizzi IP e protocolli come il routing."
+                    },
+                    {
+                        "title": "Livello 4 - Trasporto",
+                        "description": "Garantisce che i dati arrivino correttamente dal mittente al destinatario, utilizzando protocolli come TCP o UDP."
+                    },
+                    {
+                        "title": "Livello 5 - Sessione",
+                        "description": "Gestisce la comunicazione tra due dispositivi, mantenendo la connessione attiva durante tutta la sessione."
+                    },
+                    {
+                        "title": "Livello 6 - Presentazione",
+                        "description": "Si occupa della formattazione dei dati, per esempio codificando o decodificando informazioni tra formati diversi."
+                    },
+                    {
+                        "title": "Livello 7 - Applicazione",
+                        "description": "Questo è il livello più vicino all'utente e include le applicazioni e i protocolli utilizzati per l'interazione diretta con la rete, come HTTP, FTP, SMTP."
+                    }
+                ]
+            },
+            {
+                "title": "TCP (Transmission Control Protocol)",
+                "content": "Il TCP (Transmission Control Protocol) è un protocollo di trasporto affidabile e orientato alla connessione. È uno dei principali protocolli utilizzati per la trasmissione di dati su Internet. TCP garantisce che i dati vengano consegnati correttamente e nell'ordine giusto tra il mittente e il destinatario.",
+                "items": []
+            },
+            {
+                "title": "UDP (User Datagram Protocol)",
+                "content": "L'UDP (User Datagram Protocol) è un protocollo di trasporto senza connessione e non affidabile. A differenza del TCP, UDP non garantisce la consegna dei dati, né l'ordine in cui vengono ricevuti.",
+                "items": []
+            },
+            {
+                "title": "Porta",
+                "content": "Una porta è un punto di accesso logico attraverso il quale un computer o un altro dispositivo può inviare e ricevere dati in una rete. Le porte sono numerate e permettono di distinguere tra diversi tipi di traffico che transitano su una rete. Ogni servizio di rete, come un server web (HTTP) o un server di posta elettronica (SMTP), opera su una porta specifica. Ad esempio, la porta 80 è utilizzata per il traffico HTTP, mentre la porta 443 è utilizzata per HTTPS (HTTP sicuro). Le porte possono essere di due tipi: <ul><li><strong>Porte Well-Known</strong>: numeri da 0 a 1023, utilizzate per i principali servizi di rete.</li><li><strong>Porte Registrate</strong>: numeri da 1024 a 49151, usate da applicazioni e servizi specifici.</li></ul>Le porte sono una parte essenziale del modello di comunicazione basato su TCP/IP.",
+                "items": []
+            },
+            {
+                "title": "HTTP (HyperText Transfer Protocol)",
+                "content": "HTTP (HyperText Transfer Protocol) è un protocollo di comunicazione utilizzato per il trasferimento di dati su internet. È il fondamento di ogni interazione tra client e server nel World Wide Web. HTTP è un protocollo stateless, cioè non mantiene alcuna informazione tra le richieste successive, il che significa che ogni richiesta HTTP è indipendente dalle precedenti.<br><br>Una tipica interazione HTTP implica che il client (ad esempio, un browser web) invii una richiesta al server per recuperare una risorsa (come una pagina web o un'immagine). Il server, quindi, risponde con i dati richiesti. HTTP funziona utilizzando il modello client-server e opera sulla porta 80 di default.<br><br>Esistono due versioni principali di HTTP: <ul><li><strong>HTTP/1.1</strong>: La versione più utilizzata di HTTP, che ha introdotto diverse ottimizzazioni rispetto alla versione precedente.</li><li><strong>HTTP/2</strong>: Una versione più recente che migliora le performance rispetto a HTTP/1.1, supportando il multiplexing delle richieste e una maggiore efficienza nella gestione delle connessioni.</li></ul>",
+                "items": []
+            },
+            {
+                "title": "FTP (File Transfer Protocol)",
+                "content": "FTP (File Transfer Protocol) è un protocollo di rete utilizzato per il trasferimento di file tra un client e un server su una rete TCP/IP. FTP consente agli utenti di caricare, scaricare o gestire file su un server remoto.",
+                "items": [
+                    {
+                        "title": "FTP Anonimo",
+                        "description": "FTP in modalità anonima consente agli utenti di accedere a determinati file senza la necessità di un account."
+                    },
+                    {
+                        "title": "FTP Sicuro",
+                        "description": "FTP sicuro (SFTP) aggiunge uno strato di sicurezza attraverso la crittografia dei dati durante il trasferimento."
+                    }
+                ]
+            },
+            {
+                "title": "SMTP (Simple Mail Transfer Protocol)",
+                "content": "SMTP (Simple Mail Transfer Protocol) è un protocollo utilizzato per inviare email da un client al server di posta o tra server di posta elettronica. SMTP è uno dei protocolli fondamentali del sistema di posta elettronica e funziona principalmente nella trasmissione di messaggi di posta da un server di invio a uno di ricezione.",
+                "items": []
+            },
+            {
+                "title": "LAN (Local Area Network)",
+                "content": "Una LAN (Local Area Network) è una rete di computer che copre una piccola area geografica, come un'abitazione, un ufficio o un edificio. Le LAN consentono ai dispositivi connessi di comunicare tra loro e di accedere a risorse condivise come file, stampanti o internet.",
+                "items": []
+            },
+            {
+                "title": "WAN (Wide Area Network)",
+                "content": "Una WAN (Wide Area Network) è una rete che copre una vasta area geografica, come una città, un paese o persino il mondo intero. Una delle WAN più grandi e conosciute è Internet.",
+                "items": []
+            },
+            {
+                "title": "Router",
+                "content": "Un router è un dispositivo che instrada i pacchetti di dati tra reti diverse, come tra una rete domestica (LAN) e Internet (WAN). I router possono anche fornire funzioni di sicurezza come firewall e filtraggio del traffico.",
+                "items": []
+            }
+        ]
+    },
+    "footer": {
+        "text": "&copy; 2024 WBECKSCHOOL",
+        "logo": "../images/logo.png",
+        "author": "Matteo Beccari 5F"
+    },
+    "scripts": [
+        {
+            "src": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+            "integrity": "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz",
+            "crossorigin": "anonymous"
+        }
+    ]
+}

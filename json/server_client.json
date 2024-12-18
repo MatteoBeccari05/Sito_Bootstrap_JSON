@@ -1,0 +1,152 @@
+{
+  "navbar": [
+    {
+      "text": "Home",
+      "link": "../pages/index.html"
+    },
+    {
+      "text": "Le socket",
+      "link": "../pages/socket.html"
+    },
+    {
+      "text": "Server / Client",
+      "link": "../pages/server_client.html",
+      "active": true
+    },
+    {
+      "text": "La Pila ISO/OSI",
+      "link": "../pages/pila_iso_osi.html"
+    },
+    {
+      "text": "Stack TCP/IP",
+      "link": "../pages/stack_tcp_ip.html"
+    },
+    {
+      "text": "ISO/OSI vs TCP/IP",
+      "link": "../pages/isoosi_vs_tcpip.html"
+    },
+    {
+      "text": "Glossario",
+      "link": "../pages/glossario.html"
+    }
+  ],
+  "content": {
+    "title": "Architettura Server-Client",
+    "sections": [
+      {
+        "type": "paragraph",
+        "content": "L'architettura client-server è un modello di progettazione di sistemi informatici in cui le risorse e i servizi sono distribuiti tra due entità principali: il client e il server. Questo modello è alla base di molte applicazioni moderne, inclusi i servizi web, le reti aziendali e le applicazioni mobili. L'architettura client-server è un modello fondamentale per la costruzione di applicazioni distribuite, dove la separazione dei ruoli tra client e server consente un'elaborazione più efficiente, centralizzata e sicura. Questo modello è molto usato in vari settori, tra cui il web, le applicazioni aziendali, i giochi online e i sistemi di gestione dei dati."
+      },
+      {
+        "type": "heading",
+        "content": "Che cos'è un Server?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Un <b>server</b> è un dispositivo o software che fornisce <a href=\"https://it.wikipedia.org/wiki/Risorsa_di_sistema#:~:text=Una%20risorsa%20%C3%A8%20un%20elemento,che%20essi%20ne%20possano%20usufruire.\" target=\"_blank\">risorse</a>, dati o servizi a uno o più client su una rete. Esempi di server includono server web (che ospitano siti web), server di posta elettronica e server di <a href=\"https://it.wikipedia.org/wiki/Base_di_dati\" target=\"_blank\"> database</a>. I server sono progettati per gestire e rispondere a richieste provenienti da uno o più client, utilizzando specifici protocolli di comunicazione. Esistono diversi tipi di server a seconda delle funzionalità che offrono, come i web server, che gestiscono le richieste di pagine web, o i file server, che archivia e fornisce accesso a file. In generale, i server sono caratterizzati da una maggiore potenza di elaborazione e capacità di gestione simultanea di molteplici richieste rispetto ai client, e sono solitamente sempre attivi e connessi alla rete per garantire la disponibilità dei servizi."
+      },
+      {
+        "type": "heading",
+        "content": "Che cos'è un Client?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Un <b>client</b> è un dispositivo o un'applicazione che invia richieste al server per accedere a risorse o servizi. Ad esempio, un browser web è un client che richiede pagine web ai server. Il client invia richieste al server, che elabora e restituisce i dati o i servizi richiesti. I client possono essere dispositivi fisici, come computer, smartphone o tablet, o applicazioni software, come browser web o client di posta elettronica. In un'architettura client-server, il client è responsabile dell'invio delle richieste e dell'interazione diretta con l'utente, mentre il server gestisce l'elaborazione e la fornitura delle risorse richieste."
+      },
+      {
+        "type": "heading",
+        "content": "Come funziona l'architettura Server-Client?"
+      },
+      {
+        "type": "ordered-list",
+        "content": [
+          {
+            "title": "Richiesta",
+            "description": "Il client invia una richiesta al server per ottenere una risorsa o avviare un'azione specifica. La richiesta include informazioni come il tipo di azione (ad esempio, visualizzare una pagina web o ottenere dati), eventuali parametri necessari (come ID utente o query di ricerca) e il metodo di comunicazione (ad esempio, HTTP per il web). Il client può essere un browser web, un'applicazione mobile o un altro software che comunica con il server."
+          },
+          {
+            "title": "Elaborazione",
+            "description": "Una volta che il server riceve la richiesta, la prima cosa che fa è verificare la sua validità. Il server controlla se la richiesta contiene tutti i dati necessari e se il client ha i permessi per effettuare quella specifica operazione. Successivamente, il server elabora la richiesta, che potrebbe comportare il recupero di dati da un database, elaborazione della logica applicativa o accesso a servizi esterni."
+          },
+          {
+            "title": "Risposta",
+            "description": "Dopo aver elaborato la richiesta, il server prepara e invia una risposta al client. La risposta può contenere dati (come una pagina HTML, un file JSON o un'immagine) o semplicemente una conferma di successo o errore. Il client quindi riceve la risposta e la utilizza per visualizzare le informazioni all'utente o completare l'azione richiesta."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "../images/cs.png",
+        "alt": "Diagramma Server-Client",
+        "caption": "Schema del modello Server-Client"
+      },
+      {
+        "type": "heading",
+        "content": "Tipi di Server"
+      },
+      {
+        "type": "unordered-list",
+        "content": [
+          {
+            "title": "Server Web",
+            "description": "Fornisce contenuti e risorse per siti web."
+          },
+          {
+            "title": "Server Database",
+            "description": "Gestisce l'archiviazione e il recupero di dati strutturati."
+          },
+          {
+            "title": "Server di Posta",
+            "description": "Gestisce l'invio e la ricezione di email."
+          },
+          {
+            "title": "Server di File",
+            "description": "Permette la condivisione di file in una rete."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Vantaggi dell'architettura Server-Client"
+      },
+      {
+        "type": "unordered-list",
+        "content": [
+          {
+            "title": "Centralizzazione",
+            "description": "I server centralizzano le risorse e i servizi, rendendoli più facili da gestire."
+          },
+          {
+            "title": "Scalabilità",
+            "description": "È possibile aggiungere più client senza influire sul server, a meno che non sia sovraccarico."
+          },
+          {
+            "title": "Sicurezza",
+            "description": "Le risorse centralizzate possono essere protette con misure di sicurezza avanzate."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Limitazioni"
+      },
+      {
+        "type": "unordered-list",
+        "content": [
+          {
+            "title": "Dipendenza dal server",
+            "description": "Se il server si arresta, i client non possono accedere ai servizi."
+          },
+          {
+            "title": "Possibile sovraccarico",
+            "description": "Troppi client possono rallentare il server."
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "content": "&copy; 2024 WBECKSCHOOL <img src=\"../images/logo.png\" alt=\"WBSCHOOL Logo\" style=\"height: 50px;\">",
+    "secondary_content": "Matteo Beccari 5F"
+  }
+}
